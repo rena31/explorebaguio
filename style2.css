@@ -1,0 +1,167 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: maroon;
+  z-index: 10;
+  box-shadow: orange;
+}
+
+.nav-links {
+  display: flex;
+  gap: 210px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: darkred;
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+.home-btn {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+ }
+
+
+.home-btn:hover {
+  color: darkred;
+}
+
+#All-section {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  text-align: center;
+  flex-direction: column;
+  background-color: beige;
+}
+
+#All-section:target {
+  display: flex;
+}
+
+#All-section h1 {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+#All-section p {
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+  font-size: 1.1em;
+}
+
+#All-section .row{
+  margin-bottom: 40px;
+}
+
+.Tourist, .City, .Food{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20PX;
+  text-align: center;
+  flex-direction: column;
+  background-color: beige;
+}
+
+.Tourist:target, .City:target, .Food:target {
+  display: flex; 
+}
+.Tourist h1, .City h1, .Food h1{
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-top: 10px;
+
+}
+
+.Tourist p, .City p, .Food p{
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+  font-size: 1.1em;
+}
+
+.Tourist .row, .City .City-content, .Food .Food-content{
+  margin-bottom: 40px;
+}
+
+.image-Tourist, .image-City, .image-Food{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+.image-Tourist img, .image-City img, .image-Food img{
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: ;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-Tourist img:hover, .image-City img:hover, .image-Food img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0,0.3);
+}
+
+.line{
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  width: 50%;
+  margin: 10px auto;
+}
+
